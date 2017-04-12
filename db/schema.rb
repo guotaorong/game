@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20170412025709) do
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "attechment"
+    t.string   "attachment"
   end
 
   create_table "users", force: :cascade do |t|
