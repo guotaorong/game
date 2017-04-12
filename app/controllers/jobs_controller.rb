@@ -19,6 +19,12 @@ class JobsController < ApplicationController
               Job.where(is_hidden: false).order('wage_lower_bound DESC')
             when 'by_upper_bound'
               Job.where(is_hidden: false).order('wage_upper_bound DESC')
+            when 'by_wolf'
+              Job.where(is_wolf: true).order('wolf_name DESC')
+            when 'by_lion'
+              Job.where(is_lion: true).order('lion_name DESC')
+            when 'by_dragon'
+              Job.where(is_dragon: true).order('dragon_name DESC')
             else
               Job.where(is_hidden: false).order('created_at DESC')
     end

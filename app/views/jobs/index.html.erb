@@ -10,6 +10,10 @@ data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
       <%= link_to("BY LOWER", jobs_path(:order => "by_lower_bound"))%>
       <%= link_to("BY UPPER", jobs_path(:order => "by_upper_bound"))%>
       <%= link_to("BY TIME", jobs_path)%>
+      <hr>
+      <%= link_to("Wolfs", jobs_path(:order => "by_wolf"))%>
+      <%= link_to("Lions", jobs_path(:order => "by_lion"))%>
+      <%= link_to("Dragons", jobs_path(:order => "by_dragon"))%>
     </li>
   </ul>
 </div>
