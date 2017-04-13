@@ -1,3 +1,31 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Job Listing</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <% if !current_user%>
+          <li><%= link_to("SIGN UP", new_user_registration_path)%></li>
+          <li><%= link_to("LOG IN", new_user_session_path)%></li>
+        <% else%>
+          <li class="dropown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Hi!, <%= current_user.email%>
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <% if current_user.admin?%>
+                <li><%= link_to("Admin Panel", admin_jobs_path)%></li>
+              <% end%>
+              <li><%= link_to("LOG OUT", destroy_user_session_path, method: :delete)%></li>
+            </ul>
+          </li>
+        <% end%>
+      </ul>
+    </div>
+  </div>
+</nav>
 <div class="dropdown clearfix pull-right">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider"
 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
@@ -41,3 +69,9 @@ data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
     <% end%>
   </tbody>
 </table>
+<footer class="container" style="margin-top: 100px">
+  <p class="text-center">Copyright ©2017 Rails 101
+    <br>
+    Design by yourself
+  </p>
+</footer>
