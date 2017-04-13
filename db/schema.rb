@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170412103553) do
+ActiveRecord::Schema.define(version: 20170413091428) do
 
   create_table "jobs", force: :cascade do |t|
     t.string   "title"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170412103553) do
     t.boolean  "is_wolf",          default: true
     t.boolean  "is_lion",          default: true
     t.boolean  "is_dragon",        default: true
+    t.string   "image"
   end
 
   create_table "resumes", force: :cascade do |t|

@@ -15,4 +15,6 @@ class Job < ApplicationRecord
   end
 
   has_many :resumes
+
+  mount_uploader :image, ImageUploader
 end

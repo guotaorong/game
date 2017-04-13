@@ -14,4 +14,10 @@
   <%= f.input :is_lion%>
   <%= f.input :dragon_name%>
   <%= f.input :is_dragon%>
+  <hr>
+  <% if @job.image.present? %>
+    <span>JOB</span> <br>
+    <%= image_tag(@job.image.thumb.url) %>
+  <% end %>
+  <%= f.input :image, as: :file %>
 <% end%>
