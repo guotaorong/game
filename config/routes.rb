@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root 'welcome#index'
+  root 'video#index'
+
+  resources :welcome
 
   resources :jobs do
     resources :resumes
