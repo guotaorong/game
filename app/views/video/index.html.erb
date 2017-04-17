@@ -3,45 +3,45 @@
   <source src="video.mp4" type="video/mp4">
 </video>
 <div id="polina">
-  <h1>终极大战！<hr>急需人才！</h1>
-  <p>🇸🇴BY🇸🇴GTR🇸🇴</p>
-  <button>播放暂停</button>
-  <button><%= link_to("点击进入", welcome_index_path)%></button>
+  <h1>💫权游大战<hr>⚔急聘人才</h1>
+  <p>🇦🇶 BY GTR</p>
+  <button>🔓 播放控制</button>
+  <button><%= link_to("👉 点击进入", welcome_index_path)%></button>
 </div>
 <br>
 <%= audio_tag "/game.mp3", id: "sound", class: "audio-to-play", autoplay: true %>
 <br>
 <script>
   var vid = document.getElementById("bgvid");
-                                                  var pauseButton = document.querySelector("#polina button");
+                                                                                            var pauseButton = document.querySelector("#polina button");
 
-                                                  if (window.matchMedia('(prefers-reduced-motion)').matches) {
-                                                      vid.removeAttribute("autoplay");
-                                                      vid.pause();
-                                                      pauseButton.innerHTML = "Paused";
-                                                  }
+                                                                                            if (window.matchMedia('(prefers-reduced-motion)').matches) {
+                                                                                                vid.removeAttribute("autoplay");
+                                                                                                vid.pause();
+                                                                                                pauseButton.innerHTML = "Paused";
+                                                                                            }
 
-                                                  function vidFade() {
-                                                    vid.classList.add("stopfade");
-                                                  }
+                                                                                            function vidFade() {
+                                                                                              vid.classList.add("stopfade");
+                                                                                            }
 
-                                                  vid.addEventListener('ended', function()
-                                                  {
-                                                  // only functional if "loop" is removed
-                                                  vid.pause();
-                                                  // to capture IE10
-                                                  vidFade();
-                                                  });
+                                                                                            vid.addEventListener('ended', function()
+                                                                                            {
+                                                                                            // only functional if "loop" is removed
+                                                                                            vid.pause();
+                                                                                            // to capture IE10
+                                                                                            vidFade();
+                                                                                            });
 
 
-                                                  pauseButton.addEventListener("click", function() {
-                                                    vid.classList.toggle("stopfade");
-                                                    if (vid.paused) {
-                                                      vid.play();
-                                                      pauseButton.innerHTML = "Pause";
-                                                    } else {
-                                                      vid.pause();
-                                                      pauseButton.innerHTML = "Paused";
-                                                    }
-                                                  })
+                                                                                            pauseButton.addEventListener("click", function() {
+                                                                                              vid.classList.toggle("stopfade");
+                                                                                              if (vid.paused) {
+                                                                                                vid.play();
+                                                                                                pauseButton.innerHTML = "Pause";
+                                                                                              } else {
+                                                                                                vid.pause();
+                                                                                                pauseButton.innerHTML = "Paused";
+                                                                                              }
+                                                                                            })
 </script>
