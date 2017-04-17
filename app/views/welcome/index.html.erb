@@ -66,19 +66,19 @@
     <header>
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome</div>
+          <div class="intro-lead-in">Welcome to Our World!</div>
           <div class="intro-heading">WE NEED You</div>
+          <%= link_to("PLEASE COME IN", jobs_path(@job), class: "page-scroll btn btn-xl")%>
         </div>
       </div>
     </header>
-    <%= link_to("JOBS", jobs_path(@job))%>
     <!-- Services Section -->
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">猎头服务</h3>
           </div>
         </div>
         <div class="row text-center">
@@ -87,24 +87,24 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">专业</h4>
+            <p class="text-muted">极其专业</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">急速</h4>
+            <p class="text-muted">非常急速</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">保密</h4>
+            <p class="text-muted">完全保密</p>
           </div>
         </div>
       </div>
@@ -114,8 +114,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading">国别</h2>
+            <h3 class="section-subheading text-muted">赶紧选择</h3>
           </div>
         </div>
         <div class="row">
@@ -129,8 +129,10 @@
               <img src="img/portfolio/winter.jpg" class="img-responsive" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Round Icons</h4>
-              <p class="text-muted">Graphic Design</p>
+              <h4>Kingdom of the North<br>
+                北境王国</h4>
+              <p class="text-muted">Ruled by House Stark of Winterfell<br>
+                史塔克家族</p>
               <%= link_to("Wolfs", jobs_path(:order => "by_wolf"))%>
             </div>
           </div>
@@ -144,8 +146,10 @@
               <img src="img/portfolio/roar.jpg" class="img-responsive" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Startup Framework</h4>
-              <p class="text-muted">Website Design</p>
+              <h4>Kingdom of the Rock<br>
+                凯岩王国</h4>
+              <p class="text-muted">Ruled by House Lannister of Casterly Rock<br>
+                兰尼斯特家族</p>
               <%= link_to("Lions", jobs_path(:order => "by_lion"))%>
             </div>
           </div>
@@ -159,8 +163,20 @@
               <img src="img/portfolio/dragon.jpg" class="img-responsive" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Treehouse</h4>
-              <p class="text-muted">Website Design</p>
+              <h4>丹妮莉丝·坦格利安<br>
+                <br>
+                ok
+                <br>
+                ok
+                <br>
+                ok
+              </h4>
+              <p class="text-muted">塔格利安家族<br>
+                ok<br>
+                ok<br>
+                ok<br>
+                ok<br>
+                ok</p>
               <%= link_to("Dragons", jobs_path(:order => "by_dragon"))%>
             </div>
           </div>
@@ -185,7 +201,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+              <img src="img/portfolio/flower.jpg" class="img-responsive" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Escape</h4>
@@ -469,10 +485,10 @@
               <div class="col-lg-8 col-lg-offset-2">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2>琼恩·雪诺</h2>
+                  <p class="item-intro text-muted">Jon Snow</p>
                   <img class="img-responsive img-centered" src="img/portfolio/snow.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>“提利昂·兰尼斯特曾说：多数人宁可否认事实，也不愿面对真相，但琼恩已经想透了种种磨难。他清楚地知道自己是谁：他是琼恩·雪诺，不但是私生子，更是背离誓约的逃兵，既无母亲，亦无朋友，将遭天谴。终其一生——不论他这一生能有多长——都将被迫流浪，成为阴影中沉默的孤民，不敢说出真名。无论走到七国何处，必将生活在谎言之中，否则别人会对他群起而攻之。但是，只要他能与兄弟并肩作战，为父亲报仇雪恨，所有这些都无足轻重。”</p>
                   <p>
                     <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
                   <ul class="list-inline">
@@ -532,7 +548,7 @@
                   <!-- Project Details Go Here -->
                   <h2>Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-responsive img-centered" src="img/portfolio/king.jpg" alt="">
+                  <img class="img-responsive img-centered" src="img/portfolio/couple.jpg" alt="">
                   <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
                   <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
                   <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -586,9 +602,9 @@
               <div class="col-lg-8 col-lg-offset-2">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
+                  <h2>高庭玫瑰</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                  <img class="img-responsive img-centered" src="img/portfolio/tyrell.jpg" alt="">
                   <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
                   <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
                   <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
