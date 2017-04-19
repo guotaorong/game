@@ -33,7 +33,7 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand page-scroll" href="/">Game of Thrones💫冰与火之歌</a>
+          <a class="navbar-brand page-scroll" href="/">Game of Thrones💫权力的游戏</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -51,7 +51,7 @@
               <a class="page-scroll" href="#about">About💫关于</a>
             </li>
             <li>
-              <a class="page-scroll" href="#team">Team💫团队</a>
+              <a class="page-scroll" href="#team">BACKUP💫后援</a>
             </li>
             <li>
               <a class="page-scroll" href="#contact">Contact💫联络</a>
@@ -66,9 +66,9 @@
     <header>
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome to Our World!</div>
-          <div class="intro-heading">WE NEED You</div>
-          <%= link_to("PLEASE COME IN", jobs_path(@job), class: "page-scroll btn btn-xl")%>
+          <div class="intro-lead-in">Welcome to Our World</div>
+          <div class="intro-heading">We Need You</div>
+          <%= link_to("Come In", jobs_path(@job), class: "page-scroll btn btn-lg btn-danger")%>
         </div>
       </div>
     </header>
@@ -78,7 +78,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Services</h2>
-            <h3 class="section-subheading text-muted">猎头服务</h3>
+            <h3 class="section-subheading text-muted">服务</h3>
           </div>
         </div>
         <div class="row text-center">
@@ -88,15 +88,15 @@
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">专业</h4>
-            <p class="text-muted">极其专业</p>
+            <p class="text-muted">专业，迅速匹配</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">急速</h4>
-            <p class="text-muted">非常急速</p>
+            <h4 class="service-heading">安全</h4>
+            <p class="text-muted">安全，安全穿越</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -104,7 +104,7 @@
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">保密</h4>
-            <p class="text-muted">完全保密</p>
+            <p class="text-muted">保密，完全保密</p>
           </div>
         </div>
       </div>
@@ -114,8 +114,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">国别</h2>
-            <h3 class="section-subheading text-muted">赶紧选择</h3>
+            <h2 class="section-heading">Country</h2>
+            <h3 class="section-subheading text-muted">国家</h3>
           </div>
         </div>
         <div class="row">
@@ -133,7 +133,7 @@
                 北境王国</h4>
               <p class="text-muted">Ruled by House Stark of Winterfell<br>
                 史塔克家族</p>
-              <%= link_to("Wolfs", jobs_path(:order => "by_wolf"))%>
+              <%= link_to("Wolfs", jobs_path(:order => "by_wolf"), :class => "btn btn-default")%>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -150,7 +150,7 @@
                 凯岩王国</h4>
               <p class="text-muted">Ruled by House Lannister of Casterly Rock<br>
                 兰尼斯特家族</p>
-              <%= link_to("Lions", jobs_path(:order => "by_lion"))%>
+              <%= link_to("Lions", jobs_path(:order => "by_lion"),  :class => "btn btn-warning")%>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -163,21 +163,21 @@
               <img src="img/portfolio/dragon.jpg" class="img-responsive" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>丹妮莉丝·坦格利安<br>
+              <h4>丹妮莉丝·坦格利安
                 <br>
-                ok
+                龙母
                 <br>
-                ok
+                龙母
                 <br>
-                ok
+                龙母
               </h4>
               <p class="text-muted">塔格利安家族<br>
-                ok<br>
-                ok<br>
-                ok<br>
-                ok<br>
-                ok</p>
-              <%= link_to("Dragons", jobs_path(:order => "by_dragon"))%>
+                龙母<br>
+                龙母<br>
+                龙母<br>
+                龙母<br>
+                龙母</p>
+              <%= link_to("Dragons", jobs_path(:order => "by_dragon"),  :class => "btn btn-danger")%>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -187,7 +187,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+              <img src="img/portfolio/dorne1.jpg" class="img-responsive" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Golden</h4>
@@ -215,11 +215,11 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+              <img src="img/portfolio/wall.jpg" class="img-responsive" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Dreams</h4>
-              <p class="text-muted">Website Design</p>
+              <h4>Winter is coming</h4>
+              <p class="text-muted">点点试试</p>
             </div>
           </div>
         </div>
@@ -321,7 +321,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img src="img/team/he.jpg" class="img-responsive img-circle" alt="">
+              <img src="img/team/he3.jpg" class="img-responsive img-circle" alt="">
               <h4>Tyrion Lannister</h4>
               <p class="text-muted">Lead Designer</p>
               <ul class="list-inline social-buttons">
@@ -336,8 +336,8 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img src="img/team/he2.jpg" class="img-responsive img-circle" alt="">
-              <h4>Petyr Baelish</h4>
+              <img src="img/team/she2.jpg" class="img-responsive img-circle" alt="">
+              <h4>queen</h4>
               <p class="text-muted">Lead Marketer</p>
               <ul class="list-inline social-buttons">
                 <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -351,8 +351,8 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img src="img/team/she.jpg" class="img-responsive img-circle" alt="">
-              <h4>Sansa Star</h4>
+              <img src="img/team/girl2.jpg" class="img-responsive img-circle" alt="">
+              <h4>STAKK</h4>
               <p class="text-muted">Lead Developer</p>
               <ul class="list-inline social-buttons">
                 <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -548,7 +548,7 @@
               <div class="col-lg-8 col-lg-offset-2">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
+                  <h2>龙母</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                   <img class="img-responsive img-centered" src="img/portfolio/couple.jpg" alt="">
                   <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
@@ -576,9 +576,9 @@
               <div class="col-lg-8 col-lg-offset-2">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                  <h2>红毒蛇</h2>
+                  <p class="item-intro text-muted">我还活着</p>
+                  <img class="img-responsive img-centered" src="img/portfolio/dushe.gif" alt="">
                   <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
                   <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
                   <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -632,9 +632,9 @@
               <div class="col-lg-8 col-lg-offset-2">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                  <h2>异鬼</h2>
+                  <p class="item-intro text-muted">寒冬来临，谁与争锋</p>
+                  <img class="img-responsive img-centered" src="img/portfolio/yigui.jpg" alt="">
                   <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
                   <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
                   <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
