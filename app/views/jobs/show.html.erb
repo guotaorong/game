@@ -1,45 +1,16 @@
 <div class="jumbotron">
-  <h1><%= @job.title%></h1>
-  <p><%= simple_format(@job.description)%></p>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <div class="text-center">
-    <%= link_to("RESUME", new_job_resume_path(@job), class: "btn btn-success")%>
+  <div class="container">
+    <h2 class="text-center"><%= @job.title%></h2>
+    <div class="text-center">
+      <div class="box">
+        <div class="box-content">
+          <h1 class="tag-title"><%= simple_format(@job.description)%></h1>
+          <hr />
+          <p>来吧，勇士！</p>
+          <br />
+          <%= link_to("RESUME", new_job_resume_path(@job), class: "btn btn-success")%>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<!--3d-->
-<figure id=blinds-window>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d5.jpg alt class=first>
-  <img src=/img/3d6.jpg alt class=second>
-  <img src=/img/3d6.jpg alt class=second>
-  <img src=/img/3d6.jpg alt class=second>
-  <img src=/img/3d6.jpg alt class=second>
-  <img src=/img/3d6.jpg alt class=second>
-  <img src=/img/3d6.jpg alt class=second>
-  <img src=/img/3d6.jpg alt class=second>
-  <img src=/img/3d6.jpg alt class=second>
-  <img src=/img/3d6.jpg alt class=second>
-  <img src=/img/3d6.jpg alt class=second>
-</figure>
